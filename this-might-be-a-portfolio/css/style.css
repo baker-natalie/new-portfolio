@@ -1,0 +1,122 @@
+body {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	font-family: 'Special Elite', cursive;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+}
+
+.landing {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+	background-image: url(images/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-width: 100%;
+	border: 1px solid black;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+}
+
+.soc-med-landing {
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 82vh;
+	margin-left: calc(50% - 150px);
+}
+
+.landing-portfolio {
+	position: absolute;
+	top: 0;
+	padding-top: 12vh;
+	width: 100%;
+}
+
+.page-title {
+	position: absolute;
+	top: 0;
+	height: 200px;
+	width: 100%;
+	padding-top: calc(50vh - 100px);
+}
+#natalie-baker,
+#web-dev {
+	width: 100%;
+	text-align: center;
+}
+
+.landing-services {
+	position: absolute;
+	top: 0;
+	padding-top: 60vh;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	border-bottom: 1px solid black;
+}
+
+.anchor-container {
+	position: absolute;
+	top: 101px;
+}
+
+.anchor-div {
+	max-width: 100%;
+	min-height: 100vh;
+	padding-top: 101px;	
+}
+
+#home {
+	background-image: url(images/bg-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#about {
+	background-image: url(images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio {
+	background-image: url(images/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#services {
+	background-image: url(images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact {
+	background-image: url(images/bg-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
