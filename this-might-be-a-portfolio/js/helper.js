@@ -4,12 +4,12 @@ var HTMLpageView = '<div class="anchor-div" id="%title%"><a class="anchor" name=
 var HTMLpageHeader = '<h1>%header%</h1>';
 var HTMLdivText = '<p class="content col-xs-12" id="%id%">%content%</p>';
 var HTMLbioImage = '<img class="img-fluid col-xs-12" src="%img%" alt="%alt%" />';
-var HTMLshowcase = '<div id="showcase"></div>';
-var HTMLshowcaseDiv = '<div class="showcase"><h4>%title%</h4></div>';
+var HTMLshowcase = '<div id="showcase" class="col-xs-12"></div>';
+var HTMLshowcaseDiv = '<div class="showcase col-xs-12 col-sm-6"><h4>%title%</h4></div>';
 var HTMLimg = '<img class="img-fluid" src="%img%" alt="%alt%" />';
 var HTMLshowcaseLinks = '<br /><span><a href="%code%">code</a></span><span><a href="%demo%">demo</a></span>';
-var HTMLprojectDiv = '<div id="projects"></div>';
-var HTMLprojects = '<div class="projects"><h4><a href="%link%">%title%</a></h4></div>';
+var HTMLprojectDiv = '<div id="projects" class="col-xs-12"></div>';
+var HTMLprojects = '<div class="projects col-xs-6 col-sm-3"><h4><a href="%link%">%title%</a></h4></div>';
 var HTMLservices = '<div class="col-xs-1"></div><div class="services col-xs-10"></div><div class="col-xs-1"></div>';
 var HTMLservice = '<div class="service"><h4>%title%</h4><p class="service-detail">%description%</p></div>';
 var HTMLemailForm = '<div class="email-form"></div>';

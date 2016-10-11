@@ -31,7 +31,7 @@
 
 	var about = {
 		id: "about-me",
-		content: "My name is Natalie Baker, and I design, develop, and deploy beautiful, functional websites using HTML, CSS, and JavaScript. I have experience with HTML5 Canvas, Bootstrap, Knockout.js, APIs, Jasmine testing, and responsive design. I am dedicated to building optimized, accessible websites with strategically designed user interfaces.<br /><br />I am currently learning React.js and Sass to complete Free Code Camp's Data Visualization projects. I am also interested in learning more Javascript frameworks and back-end development. In addition to continuing my education, I am also working and gaining experience as a freelance developer. I am currently seeking new clients, as well as full-time opportunities."
+		content: "My name is Natalie Baker, and I design, develop, and deploy beautiful, functional websites using HTML, CSS, and JavaScript. I have experience with HTML5 Canvas, Bootstrap, Knockout.js, APIs, Jasmine testing, and responsive design. I am dedicated to building optimized, accessible websites with strategically designed user interfaces.<br /><br />Right now I am learning React.js and Sass to complete Free Code Camp's Data Visualization projects. I am also interested in learning more Javascript frameworks and back-end development. In addition to continuing my education, I am also working and gaining experience as a freelance developer. I am currently seeking new clients, as well as full-time opportunities."
 	};
 	about.display = function() {
 		var formattedDivText = HTMLdivText.replace("%content%", about.content);
@@ -64,17 +64,17 @@
 				img: "images/web-perf.jpg",
 				alt: "hello sweetie thumbnail"
 			}, {
-				title: "Feed Reader Testing",
+				title: "Jasmine Testing",
 				url: "https://github.com/baker-natalie/feed-reader-testing",
 				img: "images/jasmine-testing.jpg",
 				alt: "feed reader testing thumbnail"
 			}, {
-				title: "Classic Arcade Clone",
+				title: "Arcade Clone",
 				url: "https://github.com/baker-natalie/arcade-clone",
 				img: "images/arcade-clone.jpg",
 				alt: "arcade clone thumbnail"
 			}, {
-				title: "Original Online Resume",
+				title: "Online Resume",
 				url: "https://github.com/baker-natalie/baker-natalie.github.io",
 				img: "images/resume.jpg",
 				alt: "resume thumbnail"
@@ -82,6 +82,11 @@
 		]
 	};
 	recentWork.display = function() {
+        var colors = ['#D7B8FF', '#C8FFBC', '#FDBCD9', '#B6E4FF'];
+        var randomColor = function() {
+            var newColor = colors[Math.floor(Math.random() * colors.length)];
+            return newColor;
+        };
 		$("#portfolio").append(recentWork.intro);
 		$("#portfolio").append(HTMLshowcase);
 		$("#portfolio").append(HTMLprojectDiv);
@@ -89,6 +94,7 @@
 		for (var i = 0; i < recentWork.showcase.length; i++) {
 			$("#showcase").append(HTMLshowcaseDiv.replace("%title%", recentWork.showcase[i].title));
 			var formattedShowcaseImg = HTMLimg.replace("%img%", recentWork.showcase[i].img);
+            $(".showcase:last").css('background', randomColor());
 			$(".showcase:last").append(formattedShowcaseImg.replace("%alt%", recentWork.showcase[i].alt));
 			var formattedShowcaseLinks = HTMLshowcaseLinks.replace("%code%", recentWork.showcase[i].code);
 			$(".showcase:last").append(formattedShowcaseLinks.replace("%demo%", recentWork.showcase[i].demo));
@@ -97,8 +103,10 @@
 			var formattedProjects = HTMLprojects.replace("%title%", recentWork.projects[j].title);
 			$("#projects").append(formattedProjects.replace("%link%", recentWork.projects[j].url));
 			var formattedProjectImg = HTMLimg.replace("%img%", recentWork.projects[j].img);
-			$(".projects:last").append(formattedProjectImg.replace("%alt%", recentWork.projects[j].alt));
+            $(".projects:last").css('background', randomColor)
+            $(".projects:last").append(formattedProjectImg.replace("%alt%", recentWork.projects[j].alt));
 		};
+        
 	};
 	recentWork.display();
 
@@ -118,7 +126,7 @@
 				description: "Need a crackerjack junior developer to join your team? Let's talk!"
 			}
 		],
-		contactLink: '<h2 class="col-xs-12"><a href="#contact">Get in Touch!</a></h2>'
+		contactLink: '<h4 class="col-xs-12 contact-link"><a href="#contact">Get in Touch!</a></h4>'
 	};
 	services.display = function() {
 		$("#services").append(HTMLservices);
