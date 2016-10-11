@@ -3,94 +3,86 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Quattrocento', serif;
+	color: #bfbfbf;
+}
+
+.anchor-container {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Raleway', sans-serif;
+    text-transform:capitalize;
+    font-variant:small-caps;
+    font-weight: bold;
 	text-align: center;
+	width: 100%;
 }
-
-.landing {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-height: 100vh;
-	background-image: url(images/bg-3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-	min-width: 100%;
-	border: 1px solid black;
-}
-
-
 h2 {
 	text-align: center;
 	font-size: 50px;
 	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+h4{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	margin: 5px 0px 5px 0px;
 }
 
-.soc-med-landing {
-	width: 300px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding-top: 82vh;
-	margin-left: calc(50% - 150px);
+.landing {
+	padding: 0;
 }
-
-.landing-portfolio {
-	position: absolute;
-	top: 0;
-	padding-top: 12vh;
-	width: 100%;
-}
-
-.page-title {
-	position: absolute;
-	top: 0;
-	height: 200px;
-	width: 100%;
-	padding-top: calc(50vh - 100px);
-}
-#natalie-baker,
-#web-dev {
-	width: 100%;
-	text-align: center;
-}
-
-.landing-services {
-	position: absolute;
-	top: 0;
-	padding-top: 60vh;
-	width: 100%;
-}
-
 .header {
-	position: fixed;
-	width: 100%;
-	height: 100px;
-	background-color: #fff;
-	border-bottom: 1px solid black;
+	background-color: #000;
+	height: 110px;
+}
+.natalie-baker {
+	font-size: 50px;
+	margin-top: 30px;
+}
+.job-title {
+	font-size: 36px;
+	text-align: center;
+	margin-top: 37px;
 }
 
-.anchor-container {
-	position: absolute;
-	top: 101px;
+.landing-img {
+	margin-top: 4vh;
+}
+.landing-pic {
+	border-radius: 100%;
+	border: 2px solid #bfbfbf;
+	padding: 0;
+}
+.landing-portfolio,
+.landing-services {
+	padding: 20px;
 }
 
+.nav-list {
+	display: block;
+	margin: 4vh 0 4vh 0;
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+	padding: 0;
+}
+.nav-list-item {
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 .anchor-div {
 	max-width: 100%;
 	min-height: 100vh;
-	padding-top: 101px;	
-}
-
-#home {
-	background-image: url(images/bg-6.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	padding-top: 20px;	
 }
 
 #about {
@@ -98,13 +90,57 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+#about-me {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #portfolio {
 	background-image: url(images/bg-4.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+#portfolio img {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#showcase {
+	width: 1200px;
+	max-width: 100%;
+	display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-p {
+	text-align: center;
+}
+.showcase {
+	width: 50%;
+	text-align: center;
+}
+.showcase span {
+	width: 300px;
+	max-width: 50% ;
+}
+#projects {
+	width: 1200px;
+	max-width: 100%;
+	display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+.projects {
+	width: 25%;
+	text-align: center;
 }
 
 #services {
@@ -113,10 +149,37 @@ h2 {
     background-position: center;
     background-size: cover;
 }
+.services {
+	padding: 15px 0px 15px 0px;
+}
+.service {
+	width: 800px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.service-detail {
+	margin: 5px 0px 5px 0px;
+}
 
 #contact {
 	background-image: url(images/bg-5.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+#soc-med-box {
+	height: 300px;
+	width: 300px;
+	max-width: 100%;
+	background-color: rgba(191, 191, 191, 0.25);
+	border-radius: 100%;
+	margin-left: calc(50% - 150px);
+}
+#soc-med-list {
+	padding-top: calc(50% - 20px);
+	padding-left: calc(50% - 116px);
+}
+.soc-med-icon {
+	padding: 4px;
 }
